@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo "Running pre-commit hook from .githooks/ using virtual environment"
+
+# Run the Python script using the virtual environment
+.venv/bin/python .githooks/pre-commit.py
+
+# Check the exit status of the Python script
+if [ $? -ne 0 ]; then
+    echo "Pre-commit script failed. Aborting commit."
+    exit 1
+fi
+
+# Automatically stage the generated excel_reports/ folder
+git add excel_reports/
+git add src.vba/
+
+echo "Pre-commit script completed successfully."
+echo "The generated reports in 'excel_reports/' have been staged."
+echo "Review the changes before committing."
+exit 0
