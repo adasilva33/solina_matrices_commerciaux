@@ -1,0 +1,24 @@
+{
+    "workbench.colorCustomizations": {},
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "jupyter.askForKernelRestart": false,
+    "[latex]": {
+        "editor.defaultFormatter": "James-Yu.latex-workshop"
+    },
+    "terminal.integrated.gpuAcceleration": "on",
+    "git.suggestSmartCommit": false,
+    "gitlens.advanced.messages": {
+        "suppressCreatePullRequestPrompt": true
+    },
+    "sourcery.codeLens": false,
+    "latex-workshop.bibtex-format.sort.enabled": true,
+    "editor.formatOnSave": true,
+    "python.createEnvironment.trigger": "off",
+    "git.confirmSync": false,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "files.exclude": {
+        "**/.git": false
+    }
+}
